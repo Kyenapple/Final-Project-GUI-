@@ -3,12 +3,15 @@
 # Created 2025-04-24, Updated 2025-04-28 (klc)
 # This GUI application will help workers keep track of a running number of bolts torqued 
 # THIS IS A MESS RIGHT NOW EVERYTHING IS OUT OF ORDER// ALL OVER THE PLACE
+# AI ASSISTANCE WAS USED and is properly annotated
 
 # psuedo code
 # import tkinter
 # create top level window for area selection
 # allow user to select area, delete window after selected
-#
+# start of torque count
+    # user selects an engine to begin counting torques
+    # torques are counted with each engine added
 
 # import tkinter/ create top window
 import tkinter as tk
