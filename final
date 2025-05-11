@@ -29,6 +29,19 @@ engineCount = {
     "rearHousing": {"LYM0000": 36, "JD70000": 36, "ZNL0000": 38},
 }
 
+# validate badge for later use with continue button and badge entry
+def validateBadge():
+    # strip so it is just the number being input
+    badgeNumber = badgeEntry.get().strip()  
+
+    # check badge number user types in is valid between 1-7 characters
+    if badgeNumber.isdigit() and 1 <= len(badgeNumber) <= 7:
+        # if valid. start application
+        startApp()
+    # if not valid input user will recieve ERROR code for wrong amount og digits
+    else:
+        errorLabel.config(text="Invalid badge number. Must be 1-7 digits.")
+
 # Create area selection window that pops up
 def areaSelectionWindow():
     # Opens area selection window
@@ -189,7 +202,7 @@ errorLabel = tk.Label(welcomeWindow, text="", fg="red", font=("Arial", 12), bg="
 errorLabel.place(x=280, y=310)
 
 # continue Button to proceed to application
-continueButton = tk.Button(welcomeWindow, text="Continue", font=("Arial", 14), bg="white", command=startApp)
+continueButton = tk.Button(welcomeWindow, text="Continue", font=("Arial", 14), bg="white", command=validateBadge)
 continueButton.place(x=350, y=350)
 
 # RECCOMENDATION FROM COPILOT to prevent trash collect
