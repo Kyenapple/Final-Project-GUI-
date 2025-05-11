@@ -1,0 +1,25 @@
+Manual
+Introduction
+When the user first opens the program, they will be asked for their 7-digit employee badge number to start running the program. 
+After they have successfully added this data and clicked the 'continue' button, the screen will be destroyed. 
+
+After they have logged in, they will be greeted with two screens, the first is a pop-up screen that will track the total number of torqued bolts. 
+This needs to be minimized and moved for maximum efficiency when inputting new information. 
+After that has been moved, the user will see the other screen that asks the user to click to input which part of the engine they are working on for that shift. 
+After that selection has been made, the select area screen will be closed. 
+
+The bolts torqued tracker tab will not close when a selection is made on other open tabs. 
+
+From there, the user will see three screens that show the engine type options, the total torqued bolts for the day, and your selections as you make them. 
+As they complete an engine, they will click the type of engine it was, and the tracker will update its information according to the user input for the part of the engine the user is working on and the type of engine completed. 
+
+After they have finished their shift for the day, they will click 'end shift' to finish their day in the program as well, and a shift summary will be generated with the finalized count of each engine along with total bolts torqued for each engine completed during the shift. 
+The previous screens with the engine options and the count tracker will be destroyed, and the user will close the program. 
+
+Step-By-Step
+•	User inputs 7-digit badge number
+•	User clicks "continue"
+•	The user must select which of the three areas they are working in
+•	The user will continue to select the engines they have completed for the day
+•	When the user is done, they will select "end shift" to get a shift summary
+•	After the user is done viewing their shift summary, they may close the tab and leave.
